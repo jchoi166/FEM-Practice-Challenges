@@ -1,0 +1,47 @@
+/* Base Styles */
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+
+}
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+    background-image: linear-gradient( hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    font-family: "Kumbh Sansa", sans-serif;
+}
+
+.container {
+    grid-column: 2 / 5;
+    display: grid; 
+    grid-template-columns: 1fr minmax(auto, max-content);
+
+
+    /* background-image: url("/images/bg-pattern-desktop.svg"); */
+    /* background-size: auto; */
+    background-color: white; 
+    border-radius: 2rem;
+    padding: 6rem;
+    margin: auto;
+}
+
+.img-woman {
+    
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+}
