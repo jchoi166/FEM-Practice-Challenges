@@ -17,7 +17,7 @@ body {
     box-sizing: border-box;
     height: 100vh;
     background-image: linear-gradient( hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-    font-family: "Kumbh Sansa", sans-serif;
+    font-family: "Kumbh Sans", sans-serif;
     
     display: grid; 
     grid-template-columns: repeat(5, 1fr);
@@ -70,15 +70,41 @@ body {
 }
 
 .accordion__header {
-    font-size: 3rem;
+    font-size: 3.5rem;
+}
+
+.accordion__item {
+    font-size: 13px;
 }
 
 .accordion__question {
     border: none;
     background-color: transparent;
+    font-family: "Kumbh Sans", sans-serif;
     font-weight: 400;
+    width: 100%;
+    text-align: left;
+    display: flex; 
+    justify-content: space-between;
+    cursor: pointer; 
+    padding-right: 1rem;
+}
+
+.accordion__question img {
 
 }
+
+.accordion__answer {
+    overflow: hidden;
+    max-height: 0; 
+    transition: max-height 0.2s;
+    /* padding: 1rem 0; */
+}
+
+
+
+
+
 .attribution-container {
     grid-row: 3 / 4;
     grid-column: 1 / -1;
