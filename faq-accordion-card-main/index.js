@@ -9,6 +9,7 @@ document.querySelectorAll('.accordion__question').forEach(button => {
 
         if (button.classList.contains('accordion__question--active')) {
             accordionContent.style.height = (accordionContent.scrollHeight + 10) + 'px';
+            
         } else {
             accordionContent.style.height = 0
         }
