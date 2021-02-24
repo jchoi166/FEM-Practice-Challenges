@@ -75,7 +75,7 @@ body {
 }
 
 .accordion__item {
-    font-size: 13px;
+    font-size: 1.3rem;
 }
 
 .accordion__question {
@@ -117,6 +117,13 @@ body {
     margin-bottom: 1rem;
 }
 
+
+@media only screen and (max-width: 1125px) {
+    html {
+        /* font-size: 50%; */
+    }
+}
+
 @media only screen and (max-width: 1069px) {
     .container {
         grid-template-columns: 1fr;
@@ -129,10 +136,17 @@ body {
         align-self: center;
     }
 
+    .img-woman {
+        position: relative;
+        top: -70%;
+    }
+
     .img-woman img{
-        transform: translate(0rem, -50%);
-        width: 100%;
-        
+        transform: translate(0rem, -30%);
+        min-width: 200px;
+        width: 80%;
+        display: block; 
+        margin: auto; 
     }
 }
 
