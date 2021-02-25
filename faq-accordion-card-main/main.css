@@ -10,10 +10,11 @@
 html {
     font-size: 62.5%;
     height: 100%;
-
+    /* width: 100%; */
 }
 
 body {
+    /* width: 100%; */
     box-sizing: border-box;
     height: 100vh;
     background-image: linear-gradient( hsl(273, 75%, 66%), hsl(240, 73%, 65%));
@@ -23,6 +24,7 @@ body {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
     align-items: center;
+    /* overflow:hidden; */
 }
 
 .acc-container {
@@ -47,15 +49,13 @@ body {
     background-color: white; 
     border-radius: 2rem;
     padding: 8rem 6rem 8rem 0;
-    /* overflow: hidden; */
     position: relative;
-    width: 100%;
+    width: auto;
 }
 
 .img-box {
     position: absolute;
     z-index: 3; 
-    /* top: 43%; */
     left: -11%;
     width: 17%;
     height: auto; 
@@ -76,7 +76,7 @@ body {
 .img-woman img {
     width: 115%;
     height: auto;
-    transform: translateX(-12rem);
+    transform: translateX(-14rem);
 }
 
 .accordion {
@@ -154,8 +154,7 @@ body {
     .container {
         grid-template-columns: 1fr;
         grid-template-rows: 30% 70%;
-        overflow: visible;
-        justify-items: center;
+        padding: 6rem;
     }
 
     .accordion__header {
@@ -165,41 +164,71 @@ body {
     .img-woman {
         position: relative;
         top: -80%;
+        overflow: visible; 
+        padding-left: 0; 
     }
 
     .img-woman img{
         transform: translate(0rem, -30%);
-        min-width: 200px;
         width: 80%;
         display: block; 
         margin: auto; 
     }
 
-    .orange-box {
-        /* position: absolute;
-        z-index: 3; 
-        top: -.5%;
-        left: 34%;
-        max-width: 15rem; */
-        /* transform: translate(75%, -30%); */
+    .img-box {
+        top: -4%;
+        left: 0;
+        transform: translateX(118%);
     }
+
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 725px) {
     html {
-        /* font-size: 50%; */
+        font-size: 50%;
     }
 
     .container {
-        padding: 4rem; 
+        padding: 3rem; 
+        grid-column: 1 / -1;
+        margin: 0 4rem;
     }
 
     .img-woman {
-        position: relative;
         top: -65%;
+    }
+
+    .img-box {
+        top: -8%;
+        transform: translateX(60%);
+        width: 22%;
     }
 }
 
+
+@media only screen and (max-width: 375px) {
+    html {
+        font-size: 40%;
+    }
+
+    .container {
+        min-width: 200px;
+    }
+    
+    .accordion__question {
+        font-size: 10px;
+    }
+
+    .img-woman {
+        top: -55%;
+    }
+
+    .img-box {
+        top: -8%;
+        transform: translateX(75%);
+        width: 22%;
+    }
+}
 
 
 .attribution-container {
