@@ -1,0 +1,19 @@
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0; 
+    text-transform: uppercase;
+
+    &__logo {
+        
+    }
+
+    &__links {
+        display: flex; 
+        
+        p {
+            margin-right: 3rem;
+        }
+    }
+}
+

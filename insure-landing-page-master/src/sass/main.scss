@@ -1,0 +1,14 @@
+@import "./abstracts/mixins.scss";
+@import "./abstracts/variables.scss";
+
+@import "./base/base.scss"; 
+@import "./base/typography.scss"; 
+@import "./base/utilities.scss"; 
+
+@import "./components/cta.scss"; 
+@import "./components/divider.scss"; 
+@import "./components/header.scss"; 
+@import "./components/info-card.scss"; 
+
+@import "./layout/footer.scss"; 
+@import "./layout/navbar.scss"; 
