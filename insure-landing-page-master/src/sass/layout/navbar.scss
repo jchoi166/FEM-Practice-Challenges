@@ -5,11 +5,12 @@
     text-transform: uppercase;
 
     &__logo {
-        
+        padding: 1rem;
     }
 
     &__links {
         display: flex; 
+        align-items: center;
         
         p {
             margin-right: 3rem;
