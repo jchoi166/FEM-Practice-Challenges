@@ -1,7 +1,42 @@
 .heading {
+    background-color: $color-primary-dark-violet;
+    color: white; 
+    position: relative; 
+    z-index: 1;
+    padding-top: 82px;
 
     &__container {
         display: grid; 
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: minmax(auto, 50%) 1fr;
+
+        padding: 9rem 0; 
+
     }
+
+    &__info {
+
+        p {
+            margin: 3rem 0; 
+            line-height: 2.7rem;
+        }
+    }
+
+    &__button {
+        border: 1px solid white;
+        
+    }
+
+    &__img {
+        width: 100%; 
+        position: relative; 
+        
+        img {
+            position: absolute;
+            height: auto; 
+            width: 80%; 
+            max-width: 50rem; 
+            right: 0;
+        }
+    }
+
 }

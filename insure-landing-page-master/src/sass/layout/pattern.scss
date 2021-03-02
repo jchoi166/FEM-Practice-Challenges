@@ -1,0 +1,14 @@
+.pattern {
+    position: absolute;
+
+    &--left {
+        transform: translate(-30%, 65%);
+        bottom: 0;
+        width: 10%;
+    }
+
+    &--right {
+        right: 0; 
+        transform: translate(10%, -15%);
+    }
+}
