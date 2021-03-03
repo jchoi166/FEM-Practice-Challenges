@@ -1,0 +1,16 @@
+.main {
+    color: black; 
+    padding: 26rem 0 10rem 0;
+
+    &__info-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-gap: 1.5rem;
+        
+        margin: 9.5rem 0;
+    }
+
+    &__cta-container {
+        padding: 7rem 0;
+    }
+}

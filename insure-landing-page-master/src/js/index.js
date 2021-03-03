@@ -1,4 +1,4 @@
-import "../sass/main.scss"
+import "../sass/index.scss"
 
 console.log('its working!')
 

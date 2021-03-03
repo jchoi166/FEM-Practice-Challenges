@@ -9,7 +9,7 @@
         display: grid; 
         grid-template-columns: minmax(auto, 50%) 1fr;
 
-        padding: 9rem 0; 
+        padding: 10rem 0; 
 
     }
 
@@ -23,7 +23,7 @@
 
     &__button {
         border: 1px solid white;
-        
+        font-weight: normal;
     }
 
     &__img {
@@ -33,10 +33,26 @@
         img {
             position: absolute;
             height: auto; 
-            width: 80%; 
+            width: 75%; 
             max-width: 50rem; 
             right: 0;
         }
     }
 
+}
+
+.pattern {
+    position: absolute;
+
+    &--left {
+        transform: translate(-30%, 65%);
+        bottom: 0;
+        width: 10%;
+    }
+
+    &--right {
+        right: 0; 
+        transform: translateY(-15%);
+        z-index: 2; 
+    }
 }
