@@ -1,5 +1,6 @@
 .divider {
-    // width: 27%; 
+    border: 0; 
     width: 15rem; 
-    color: $color-neutral-grayish-violet;
+    height: 1px;
+    background: lightgray;
 }

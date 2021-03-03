@@ -1,5 +1,7 @@
 .container {
+    position: relative;
     margin: 0 15rem; 
+    z-index: 1;
 }
 
 .padding-top-lg {
