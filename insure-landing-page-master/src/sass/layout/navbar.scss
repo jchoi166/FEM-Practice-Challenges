@@ -1,8 +1,8 @@
 .nav {
     z-index: 5;
-    position: fixed;
     width: 100%;
     background-color: white;
+    position: fixed;
 }
 
 .nav-bar {
@@ -21,6 +21,19 @@
         
         p {
             margin-right: 3rem;
+        }
+
+        &--mobile {
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+            background-color: white; 
+            justify-content: center;
+            flex-direction: column;
+
+            p {
+                margin-right: 0;
+            }
         }
     }
 }

@@ -4,6 +4,14 @@ html {
     font-size: 62.5%;
     height: 100%;
     box-sizing: border-box;
+
+    @include respond(tab-land) {
+        font-size: 50%;
+    } 
+
+    @include respond(tab-port) {
+        font-size: 43.8%;
+    }
 }
 
 *,
@@ -14,3 +22,6 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    position: relative; 
+}

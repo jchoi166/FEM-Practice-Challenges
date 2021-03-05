@@ -1,7 +1,10 @@
 .container {
-    position: relative;
     margin: 0 15rem; 
     z-index: 1;
+
+    @include respond(tab-port) {
+        margin: 0 6rem;
+    }
 }
 
 .padding-top-lg {

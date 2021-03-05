@@ -4,6 +4,10 @@
     position: relative;
     overflow: hidden;
 
+    &__container {
+        position: relative;
+    }
+
     &__pattern {
         position: absolute;
         transform: translateY(-25%);
