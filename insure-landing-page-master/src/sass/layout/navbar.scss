@@ -8,8 +8,9 @@
 .nav-bar {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 0; 
+    padding: 3rem 0; 
     text-transform: uppercase;
+    height: 10rem; 
 
     &__logo {
         padding: 1rem;
@@ -70,5 +71,6 @@
 
 .mobile {
     display: flex;
+    overflow: hidden;
 }
 

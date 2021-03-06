@@ -1,6 +1,12 @@
 .main {
     color: black; 
     padding: 26rem 0 10rem 0;
+    
+    @include respond(phone) {
+        text-align: center;
+        padding: 17rem 0 8rem 0;
+        
+    }
 
     &__info-container {
         display: grid;
@@ -8,6 +14,11 @@
         grid-gap: 1.5rem;
         
         margin: 9.5rem 0;
+
+        @include respond(phone) {
+            grid-template-columns: 1fr;
+            grid-gap: 5rem;
+        }
     }
 
     &__cta-container {

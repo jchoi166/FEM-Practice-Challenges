@@ -3,17 +3,28 @@
     color: white; 
     position: relative; 
     z-index: 1;
-    padding-top: 82px;
+    padding-top: 10rem;
+    // overflow: hidden; 
+
+    @include respond(phone) {
+        // overflow-x: hidden; 
+    }
 
     &__container {
         display: grid; 
         grid-template-columns: minmax(auto, 50%) 1fr;
 
-        padding: 10rem 0; 
+        padding: 10rem 15rem; 
+
+        @include respond(tab-port) {
+            padding: 10rem 6rem;
+        }
 
         @include respond(phone) {
+            padding: 0; 
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr;
+            grid-template-rows: 1fr min-content;
+            
         }
 
     }
@@ -29,6 +40,13 @@
             grid-row: 2 / 3;
             
             text-align: center;
+            padding: 6rem 3rem 10rem 3rem;
+        }
+    }
+
+    &__divider {
+        @include respond(phone) {
+            display: none; 
         }
     }
 
@@ -50,6 +68,8 @@
 
             @include respond(phone) {
                 position: relative;
+                max-width: 100%; 
+                width: 100%; 
             }
         }
     }
@@ -63,6 +83,11 @@
         transform: translate(-30%, 65%);
         bottom: 0;
         width: 10%;
+
+        @include respond(phone) {
+            width: 40%;
+            top: 10%; 
+        }
     }
 
     &--right {
@@ -70,5 +95,13 @@
         transform: translateY(-15%);
         width: 28%;
         z-index: 2; 
+        
+        @include respond(phone) {
+            bottom: -20%; 
+            transform: translateY(80%);
+            transform: rotate(25deg);
+            right: -30%;
+            width: 60%; 
+        }
     }
 }

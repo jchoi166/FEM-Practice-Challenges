@@ -5,6 +5,10 @@
     @include respond(tab-port) {
         margin: 0 6rem;
     }
+
+    @include respond(phone) {
+        margin: 0 3rem; 
+    }
 }
 
 .padding-top-lg {
