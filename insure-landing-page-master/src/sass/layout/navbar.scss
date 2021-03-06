@@ -15,6 +15,14 @@
         padding: 1rem;
     }
 
+    &__collapsed {
+        display: none; 
+
+        @include respond (phone) {
+            display: block; 
+        }
+    }
+
     &__links {
         display: flex; 
         align-items: center;
@@ -22,9 +30,12 @@
         p {
             margin-right: 3rem;
         }
-
-        &--mobile {
+        
+        @include respond(phone) {
+            display: none; 
             position: absolute;
+            left: 0;
+            top: 8rem;
             height: 100vh;
             width: 100vw;
             background-color: white; 
@@ -35,6 +46,29 @@
                 margin-right: 0;
             }
         }
+        // &--mobile {
+        //     display: flex; 
+        //     position: absolute;
+        //     left: 0;
+        //     top: 8rem;
+        //     height: 100vh;
+        //     width: 100vw;
+        //     background-color: white; 
+        //     justify-content: center;
+        //     flex-direction: column;
+
+        //     p {
+        //         margin-right: 0;
+        //     }
+
+        //     @include respond(phoneNav) {
+        //         display: none; 
+        //     }
+        // }
     }
+}
+
+.mobile {
+    display: flex;
 }
 
