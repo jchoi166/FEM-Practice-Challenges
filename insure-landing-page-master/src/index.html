@@ -37,7 +37,10 @@
   </nav>
   <section class="heading">
     <img class="pattern pattern--left" src="../src/images/bg-pattern-intro-left-desktop.svg" alt="">
-    <img class="pattern pattern--right" src="../src/images/bg-pattern-intro-right-desktop.svg" alt="">
+    <picture class="pattern pattern--right">
+      <source srcset="./images/bg-pattern-intro-right-mobile.svg" media="(max-width: 600px)">
+      <img src="../src/images/bg-pattern-intro-right-desktop.svg" alt="">
+    </picture>
     <div class="heading__container">
       <div class="heading__info">
         <hr class="divider heading__divider">
@@ -88,10 +91,17 @@
     </div>
   </section>
   <footer class="footer">
-    <img class="footer__pattern" src="./images/bg-pattern-footer-desktop.svg" alt="">
+    <picture class="footer__pattern">
+      <source
+        srcset="./images/bg-pattern-footer-mobile.svg"
+        media="(max-width: 600px)"
+      />
+      <img src="./images/bg-pattern-footer-desktop.svg" alt="">
+    </picture>
     <div class="footer__container container">
       <div class="footer__social">
         <img src="../src/images/logo.svg" alt="">
+        
         <div class="footer__social-icons">
           <img src="./images/icon-facebook.svg" alt="">
           <img src="./images/icon-twitter.svg" alt="">

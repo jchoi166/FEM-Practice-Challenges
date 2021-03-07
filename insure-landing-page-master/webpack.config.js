@@ -43,7 +43,17 @@ module.exports = (env, options) => ({
         test: /\.(html)$/,
         use: {
           loader: "html-loader",
+        },
+        options: {
+          list: [
+            {
+              tag: 'source',
+              attribute: 'srcset',
+              type: 'srcset',
+            }
+          ]
         }
+        
       },
       {
         test: /\.js$/,

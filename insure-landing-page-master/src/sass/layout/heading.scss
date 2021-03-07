@@ -97,11 +97,10 @@
         z-index: 2; 
         
         @include respond(phone) {
-            bottom: -20%; 
-            transform: translateY(80%);
-            transform: rotate(25deg);
-            right: -30%;
-            width: 60%; 
+            bottom: -20%;
+            transform: translateX(11%);
+            right: -15%;
+            width: 40%;
         }
     }
 }
