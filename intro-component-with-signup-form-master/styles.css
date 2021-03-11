@@ -16,32 +16,40 @@ body {
     height: 100%; 
     font-family: 'Poppins', sans-serif;
     font-size: 1.6rem; 
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
 }
 
 .sign-up {
     background-color: hsl(0, 100%, 74%);
     background-image: url(./images/bg-intro-desktop.png);
     margin: 0 4rem;
+    width: 70%;
 }  
 
 .container {
     display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 3.5rem;
     padding: 10rem; 
 }
 
 .info {
     color: white;
-    padding-right: 2rem;
+    padding: 0 2rem;
     display: flex; 
     flex-direction: column;
     justify-content: center;
 }
 
 .info h2 {
-    font-size: 3rem;
-    line-height: 3.4rem;
+    font-size: 4rem;
+    line-height: 4.3rem;
 }
 
 .info p {
@@ -58,6 +66,7 @@ body {
     border-radius: 5px;
     color: hsl(246, 25%, 77%);
     padding: 1.3rem 0; 
+    box-shadow: hsla(0, 50%, 58%, .7) 0 7px;
 }
 
 .form-header p {
@@ -75,6 +84,7 @@ body {
     background-color: white;
     border-radius: 5px;
     padding: 2.5rem 3rem;
+    box-shadow: hsla(0, 50%, 58%, .7) 0 7px;
 }
 
 .form ul {
@@ -83,19 +93,95 @@ body {
 
 .form input {
     width: 100%;
-    padding: 1rem;
+    padding: 1.4rem 2.4rem;
     margin-bottom: 1rem;
     border-radius: 3px;
-    border-width: 1px;
+    border-width: 2px;
     border-style: solid;
     font-family: 'Poppins', sans-serif;
-    
+    border-color: hsl(240, 2%, 88%);
+    font-weight: 600;
+}
+
+.form input::placeholder {
+    color: rgb(117, 117, 117);
+    font-weight: 600;
+}
+
+.form input:focus {
+    outline-color: hsl(248, 32%, 49%);
+    /* background: red;  */
 }
 
 .form button {
-    background-color: hsl(154, 59%, 51%);
-    border: none; 
+    background-color: hsl(154, 57%, 44%);
+    border: 2px solid hsl(154, 58%, 40%); 
     width: 100%; 
-    padding: 1.2rem 0; 
-    box-shadow: gray 1px 1px;
+    padding: 1.6rem 0; 
+    box-shadow: hsl(154, 56%, 32%) 0px 3px 4px 1px;
+    color: white; 
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.tos {
+    text-align: center;
+    margin: 0 3rem;
+    font-size: 1.1rem;
+    margin-top: 1.6rem;
+    color: hsl(247, 17%, 69%);
+}
+
+.tos span {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .sign-up {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    body {
+        height: auto; 
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        padding: 20rem 2.6rem;
+        justify-items: center;
+        /* grid-template */
+    }
+    .info {
+        text-align: center;
+        /* line-height: 3rem; */
+    }
+
+    .info h2 {
+        font-size: 3rem;
+    }
+    
+    .info p {
+        font-size: 1.4rem;
+        line-height: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .form-header {
+        padding: 1.5rem 6rem;
+        text-align: center;
+    }
 }
