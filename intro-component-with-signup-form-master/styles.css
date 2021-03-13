@@ -91,6 +91,10 @@ body {
     list-style-type: none;
 }
 
+.form li {
+    min-height: 70px;
+}
+
 .form input {
     width: 100%;
     padding: 1.4rem 2.4rem;
@@ -103,7 +107,7 @@ body {
 }
 
 .form:not(:first-child) input {
-    margin-top: 1rem; 
+    /* margin-top: 1rem;  */
 }
 
 .form input::placeholder {
@@ -123,10 +127,13 @@ body {
 .error {
     /* height: 10px;
     background-color: red; */
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-left: 1.2rem;
     color: red;
     font-weight: 500;
+    margin-bottom: 7px;
+    display: block; 
+    margin-top: 2px;
 }
 
 .form button {
