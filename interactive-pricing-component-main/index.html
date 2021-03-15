@@ -13,11 +13,35 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
-  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <div class="title">
+    <h1 class="title__primary"></h1>
+    <h3 class="title__secondary"></h3>
+  </div>
+
+  <div class="price-component">
+    <div class="slider">
+      <div class="slider__page-views"></div>
+      <div class="slider__price"></div>
+      <input class="range-slider" type="range" min='1' max="10" value="5">
+      <div class="slider__toggle">
+        <p></p>
+        <div class="toggle-switch"></div>
+        <p></p>
+        <span></span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__facts"></div>
+      <div class="card__button"></div>
+    </div>
+  </div>
+  
   Simple, traffic-based pricing
   Sign-up for our 30-day trial. No credit card required. 
 

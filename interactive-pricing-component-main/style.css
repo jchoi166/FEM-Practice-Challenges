@@ -1,2 +1,13 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /*Better practice to have box sizing here and declare it in the body in case we want to change box sizing properties in any plugins or components, etc.*/ }
+
+html {
+  font-size: 62.5%; }
+
 body {
-  background-color: lightblue; }
+  box-sizing: border-box; }
