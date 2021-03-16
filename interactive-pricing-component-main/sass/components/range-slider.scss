@@ -1,0 +1,26 @@
+.range-slider {
+    -webkit-appearance: none;
+    background: $soft-cyan;
+    border-radius: 10px;
+    height: 8px;
+    outline: none; 
+    width: 100%; 
+
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        background: $strong-cyan;
+        background-image: url(/images/icon-slider.svg);
+        background-size: 22px;
+        background-position: 49% 51%;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        height: 38px;
+        width: 38px;
+        box-shadow: 0px 10px 15px 5px hsla(174, 86%, 45%, .4);
+    }
+
+    &::-moz-range-thumb {
+        
+    }
+}

@@ -19,43 +19,57 @@
 </head>
 <body>
 
-  <div class="title">
-    <h1 class="title__primary"></h1>
-    <h3 class="title__secondary"></h3>
-  </div>
 
-  <div class="price-component">
-    <div class="slider">
-      <div class="slider__page-views"></div>
-      <div class="slider__price"></div>
-      <input class="range-slider" type="range" min='1' max="10" value="5">
-      <div class="slider__toggle">
-        <p></p>
-        <div class="toggle-switch"></div>
-        <p></p>
-        <span></span>
+  <header class="header">
+    <div class="header__title">
+      <h1 class="header__title--primary">Simple, traffic-based pricing</h1>
+      <h3 class="header__title--secondary">Sign-up for our 30-day trial. No credit card required.</h3>
+    </div>
+    <div class="header__image">
+      <img src="/images/pattern-circles.svg" alt="">
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="price-component">
+      <div class="slider">
+        <div class="slider__stats">
+          <p class="slider__views">Pageviews</p>
+          <div class="slider__price">$<span></span> /month</div>
+        </div>
+        <input class="range-slider" type="range" min='1' max="5" value="3">
+        <div class="slider__toggle">
+          <p>Monthly Billing</p>
+          <div class="toggle-switch"></div>
+          <p>Yearly Billing</p>
+          <span>25% discount</span>
+        </div>
+      </div>
+      <div class="card">
+        <ul class="card__facts">
+          <li>Unlimited websites</li>
+          <li>100% data ownership</li>
+          <li>Email reports</li>
+        </ul>
+        <div class="card__button">Start my trial</div>
       </div>
     </div>
-    <div class="card">
-      <div class="card__facts"></div>
-      <div class="card__button"></div>
-    </div>
-  </div>
+  </main>
   
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
+  
+   
 
-  Pageviews
-  $ /month
+  
+  
 
-  Monthly Billing
-  Yearly Billing 25% discount
+  
+   
 
-  Unlimited websites
-  100% data ownership
-  Email reports
+  
+  
+  
 
-  Start my trial
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
