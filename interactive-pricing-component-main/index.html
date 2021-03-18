@@ -34,16 +34,19 @@
     <div class="price-component">
       <div class="slider">
         <div class="slider__stats">
-          <p class="slider__views">Pageviews</p>
-          <div class="slider__price">$<span></span> /month</div>
+          <p class="slider__views"><span>100k</span> Pageviews</p>
+          <div class="slider__price">$<span>16.00</span> /month</div>
         </div>
         <input class="range-slider" type="range" min='1' max="5" value="3">
         <div class="slider__toggle">
           <p>Monthly Billing</p>
-          <div class="toggle-switch"></div>
-          <p>Yearly Billing</p>
-          <span>25% discount</span>
+          <label class="toggle-switch">
+            <input type="checkbox"> 
+            <span class="toggle-switch__slider round"></span>
+          </label>
+          <p class="slider__toggle--yearly">Yearly Billing</p>
         </div>
+        <!-- <span>25% discount</span> -->
       </div>
       <div class="card">
         <ul class="card__facts">

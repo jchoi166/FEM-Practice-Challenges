@@ -13,13 +13,17 @@ body {
   box-sizing: border-box;
   font-family: 'Manrope', sans-serif; }
 
+.card {
+  padding: 3.5rem; }
+
 .range-slider {
   -webkit-appearance: none;
   background: #a5f3eb;
   border-radius: 10px;
   height: 8px;
   outline: none;
-  width: 100%; }
+  width: 100%;
+  margin: 2.5rem 0; }
   .range-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -33,9 +37,71 @@ body {
     width: 38px;
     box-shadow: 0px 10px 15px 5px rgba(16, 213, 194, 0.4); }
 
-.slider__stats {
-  display: flex;
-  justify-content: space-between; }
+.slider {
+  padding: 3.5rem;
+  border-bottom: 2px solid #fafbff; }
+  .slider__stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin: 2rem 0; }
+  .slider__views {
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+  .slider__toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem; }
+    .slider__toggle p {
+      margin: 0 1.5rem;
+      font-weight: 800;
+      font-size: 1.1rem; }
+    .slider__toggle--yearly::after {
+      content: "25% Discount";
+      position: absolute;
+      margin-left: 1rem;
+      color: #ff8c66;
+      background-color: #ffe8e0;
+      padding: 2px 4px;
+      transform: translateY(-1px); }
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 22px; }
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0; }
+    .toggle-switch input:checked + .toggle-switch__slider {
+      background-color: #2196f3; }
+    .toggle-switch input:checked + .toggle-switch__slider:before {
+      transform: translateX(21px); }
+  .toggle-switch__slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px; }
+    .toggle-switch__slider::before {
+      position: absolute;
+      content: "";
+      height: 14px;
+      width: 15px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+      border-radius: 50%; }
 
 .header {
   height: 50vh;
@@ -68,7 +134,10 @@ body {
   background-color: #fafbff; }
 
 .price-component {
-  width: 50%;
+  max-width: 57rem;
   margin: auto;
-  padding: 3rem;
-  box-shadow: 0px 3px 10px; }
+  box-shadow: 0px 20px 10px 0px #d4defc;
+  box-shadow: 0px 4px 15px 0px #c4ceed;
+  color: #858fad;
+  transform: translateY(-40%);
+  background: white; }
