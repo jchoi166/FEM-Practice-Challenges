@@ -1,13 +1,27 @@
 .slider {
-    padding: 3.5rem;
-    border-bottom: 2px solid $very-pale-blue; 
+    padding: 4rem;
+    border-bottom: 1px solid rgb(217, 224, 230); 
+
+    @include phone {
+        padding: 2rem;
+    }
 
     &__stats {
-        display: flex; 
-        justify-content: space-between;
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+        row-gap: 2rem;
+
         font-size: 1.3rem;
         font-weight: 800;
         margin: 2rem 0;
+
+        @include phone {
+            grid-template-columns: 1fr;
+            // align-items: center;
+            // row-gap: 0;
+
+            text-align: center;
+        }
 
     }
 
@@ -17,15 +31,26 @@
     }
 
     &__price {
-
+        text-align: right;
+        
+        @include phone {
+            grid-row: 3 / 4;
+            
+            text-align: center;
+        }
     }
 
     &__toggle {
         display: flex; 
         justify-content: center;
         align-items: center;
-        margin-top: 4rem;
+        margin-top: 3.5rem;
+        // position: relative;
         // display: inline-block;
+        
+        @include phone {
+            margin-bottom: 2.5rem;
+        }
 
         p {
             margin: 0 1.5rem;
@@ -34,6 +59,7 @@
         }
 
         &--yearly {
+            position: relative;
 
             &::after {
                 content: "25% Discount";
@@ -41,8 +67,16 @@
                 margin-left: 1rem;
                 color: $light-red;
                 background-color: hsl(14, 100%, 94%);
-                padding: 2px 4px;
-                transform: translateY(-1px)
+                padding: 3px 4px;
+                transform: translateY(-1px);
+                width: max-content;
+
+                @include phone {
+                    content: "-25%"; 
+                    border-radius: 3rem;
+                    padding: 3px 8px;
+                    // margin-left: .5rem;
+                }
             }
         }
     }

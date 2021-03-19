@@ -1,3 +1,40 @@
 .card {
-    padding: 3.5rem;
+    padding: 4rem;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 800;
+
+    @include phone {
+        padding: 2.2rem; 
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &__facts {
+        list-style: none;
+
+        li {
+            
+            &:not(:first-child) {
+                margin-top: .9rem;
+            }
+
+            img {
+                margin-right: 1.2rem;
+            }
+        }
+
+    }
+
+    &__button {
+        background-color: $dark-desaturated-blue;
+        color: $pale-blue;
+        padding: 1.1rem 4.5rem;
+        border-radius: 3rem;
+
+        @include phone {
+            margin: 2.7rem 0 1rem 0;
+        }
+    }
 }
