@@ -28,15 +28,26 @@
     &__views {
         text-transform: uppercase;
         letter-spacing: 1px;
+        align-self: center;
     }
 
     &__price {
-        text-align: right;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        span {
+            font-size: 3.5rem;
+            color: black; 
+            font-weight: 800;
+            margin-right: .5rem;
+
+        }
         
         @include phone {
             grid-row: 3 / 4;
             
-            text-align: center;
+            justify-content: center;
         }
     }
 

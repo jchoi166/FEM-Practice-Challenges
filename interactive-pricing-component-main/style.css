@@ -20,19 +20,19 @@ body {
   padding: 4rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  font-weight: 800; }
+  align-items: center; }
   @media (max-width: 470px) {
     .card {
       padding: 2.2rem;
       flex-direction: column;
-      text-align: center; } }
+      text-align: center;
+      font-size: 1.2rem; } }
   .card__facts {
     list-style: none; }
     .card__facts li:not(:first-child) {
-      margin-top: .9rem; }
+      margin-top: 1rem; }
     .card__facts li img {
-      margin-right: 1.2rem; }
+      margin-right: 1.3rem; }
   .card__button {
     background-color: #293356;
     color: #bdccff;
@@ -82,13 +82,21 @@ body {
         text-align: center; } }
   .slider__views {
     text-transform: uppercase;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    align-self: center; }
   .slider__price {
-    text-align: right; }
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+    .slider__price span {
+      font-size: 3.5rem;
+      color: black;
+      font-weight: 800;
+      margin-right: .5rem; }
     @media (max-width: 470px) {
       .slider__price {
         grid-row: 3 / 4;
-        text-align: center; } }
+        justify-content: center; } }
   .slider__toggle {
     display: flex;
     justify-content: center;
@@ -161,6 +169,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 470px) {
+    .header {
+      height: 65vh; } }
   .header__title {
     z-index: 1;
     background-size: contain;

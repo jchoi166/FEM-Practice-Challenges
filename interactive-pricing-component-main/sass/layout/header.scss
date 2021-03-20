@@ -6,12 +6,11 @@
     justify-content: center;
     align-items: center;
     
-    // &__title-container {
-    //     position: relative;
-    // }
+    @include phone {
+        height: 65vh;
+    }
     
     &__title {
-        // position: relative;
         z-index: 1;
         background-size: contain;
         text-align: center;
@@ -26,7 +25,6 @@
         &--secondary {
             font-size: 1.3rem;
             color: $grayish-blue;
-            // font-weight: 600;
         }
     }
 

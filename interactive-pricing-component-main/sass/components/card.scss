@@ -3,12 +3,13 @@
     display: flex; 
     justify-content: space-between;
     align-items: center;
-    font-weight: 800;
+    // font-weight: 800;
 
     @include phone {
         padding: 2.2rem; 
         flex-direction: column;
         text-align: center;
+        font-size: 1.2rem;
     }
 
     &__facts {
@@ -17,11 +18,11 @@
         li {
             
             &:not(:first-child) {
-                margin-top: .9rem;
+                margin-top: 1rem;
             }
 
             img {
-                margin-right: 1.2rem;
+                margin-right: 1.3rem;
             }
         }
 
